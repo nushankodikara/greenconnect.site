@@ -1,28 +1,56 @@
 <html>
     <head>
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="viewpoint"
+            content="width=device-width, initial-scale=1.0"
+        />
         <title>Contact Us</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
+            rel="stylesheet"
+        />
 
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="contact.css">
-
-
-        
+        <link rel="stylesheet" href="contact.css" />
     </head>
     <body>
         <div class="container">
-            <form id="contact-form" method="post" action="contact.php" class="anim">
+            <form
+                id="contact-form"
+                method="POST"
+                action="/formControl/submitForm.php"
+                class="anim"
+            >
                 <h3>Get In Touch</h3>
-                <input name="name" type="text" id="name" placeholder="Your Name" required>
-                <input name="email" type="email" id="email" placeholder="Enter Your Email" required>
-                <input name="phone" type="text" id="phone" placeholder="Phone Number" required>
-                <textarea name="message" id="message" rows="4" placeholder="How can we Help You?"></textarea>
+                <input
+                    name="name"
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                />
+                <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    placeholder="Enter Your Email"
+                    required
+                />
+                <input
+                    name="phone"
+                    type="text"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                />
+                <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    placeholder="How can we Help You?"
+                ></textarea>
                 <!--<button type="submit">Send</button>-->
                 <a href="">
                     <span></span>
