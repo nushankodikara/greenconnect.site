@@ -1,9 +1,9 @@
 <?php
 
 $server = "localhost";
-$username = "";
-$password = "";
-$dbname = "";
+$username = "user";
+$password = "password";
+$dbname = "greenconnect";
 
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
@@ -22,7 +22,7 @@ if ($conn->connect_error) {
     echo "Connected successfully";
 }
 
-$sql = "INSERT INTO users (firstname, lastname, email, password) VALUES ('$firstname', '$lastname', '$email', '$userpassword')";
+$sql = "INSERT INTO users (First_Name, Last_Name, Email, Passwd) VALUES ('$firstname', '$lastname', '$email', '$userpassword')";
 
 if ($conn-> query($sql) === TRUE) {
     echo "New record created successfully";

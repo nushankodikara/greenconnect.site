@@ -1,158 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lohin</title>
-    <linK rel="stylesheet" href="login.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Log In</title>
+        <link rel="stylesheet" href="login.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gruppo&family=Righteous&family=Turret+Road:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!--form section-->
+        <section class="header">
+            <nav>
+                <!--for navigationn bar-->
+            </nav>
 
+            <div>
+                <!---content-->
+                <div class="content">
+                    <h1 class="anim">Green Connect</h1>
+                    <br />
+                    <p class="par anim">
+                        Join with us and explore the world of <br />Green
+                        Connect
+                    </p>
+                    <br />
+                    <br />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Righteous&family=Turret+Road:wght@500;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-
-   
-
-
-
-
-
-    
-
-
-    <!--form section-->
-    <section class="header">
-       
-        <nav>
-        <!--for navigationn bar-->
-
-        </nav>
-     
-
-        <div>
-
-            <!---content-->
-            <div class="content">
-                <h1 class="anim">Green Connect</h1>
-                <br>
-                <p class="par anim">Join with us and explore the world of <br>Green Connect</p>
-                <br>
-                <br>
-                
-                <a class="hobtn anim" href="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    HOME
-                </a>
-            
-                
-
-            </div>
-        </div>
-
-        
-   
-
-
-
-        <!----login box and register box-->
-        <div id="l-form" class="l-page anim" >
-            <div class="f-box anim" >
-                <div class="f-box2 anim" >
-
-                <div class="b-box">
-                    <div id="btn"></div>
-
-                    <button type="button" 
-                    login="login()" class="toggle-btn" onclick="login()">Log In</button>
-                    <button type="button"
-                    onlick="register()" class="toggle-btn" onclick="register()">Register</button>
-
+                    <a class="hobtn anim" href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        HOME
+                    </a>
                 </div>
-                <!--login box-->
-                <form id="login" class="i-g-l">
-                    <input type="text" class="inputs" placeholder="Email Id"
-                    required>
-
-                    <input type="password" class="inputs" placeholder="Enter password"
-                    required>
-
-                    <input type="checkbox" class="check-box">
-                    <span>Remember Password</span>
-                    <button type="submit" class="submit-btn">Log In</button>
-                </form>
-
-
-                <!---register box-->
-                <form id="register" class="i-g-r">
-
-                    <input type="text" class="inputs" placeholder="First Name"
-                    required>
-
-                    <input type="text" class="inputs" placeholder="Last Name"
-                    required>
-
-                    <input type="email" class="inputs" placeholder="Your Email"
-                    required>
-
-                    <input type="password" class="inputs" placeholder="Enter password"
-                    required>
-
-                    <input type="password" class="inputs" placeholder="Comfirm password"
-                    required>
-
-                    <input type="checkbox" class="check-box">
-                    <span>I agree to the terms and conditions</span>
-
-                    <button type="submit" class="submit-btn">Register</button>
-
-
-
-                </form>
-                </div>
-
             </div>
 
+            <!----login box and register box-->
+            <div id="l-form" class="l-page anim">
+                <div class="f-box anim">
+                    <div class="f-box2 anim">
+                        <div class="b-box">
+                            <div id="btn"></div>
 
+                            <button
+                                type="button"
+                                login="login()"
+                                class="toggle-btn"
+                                onclick="login()"
+                            >
+                                Log In
+                            </button>
+                            <button
+                                type="button"
+                                onlick="register()"
+                                class="toggle-btn"
+                                onclick="register()"
+                            >
+                                Register
+                            </button>
+                        </div>
+                        <!--login box-->
+                        <form id="login" class="i-g-l">
+                            <input
+                                type="text"
+                                class="inputs"
+                                placeholder="Email Id"
+                                name="email"
+                                required
+                            />
 
-        </div>
+                            <input
+                                type="password"
+                                class="inputs"
+                                placeholder="Enter password"
+                                name="password"
+                                required
+                            />
 
-        
+                            <input type="checkbox" class="check-box" />
+                            <span>Remember Password</span>
+                            <button type="submit" class="submit-btn">
+                                Log In
+                            </button>
+                        </form>
 
+                        <!---register box-->
+                        <form
+                            id="register"
+                            action="/formControl/registerUser.php"
+                            class="i-g-r"
+                        >
+                            <input
+                                type="text"
+                                class="inputs"
+                                placeholder="First Name"
+                                name="firstname"
+                                required
+                            />
 
+                            <input
+                                type="text"
+                                class="inputs"
+                                placeholder="Last Name"
+                                name="lastname"
+                                required
+                            />
 
-       
+                            <input
+                                type="email"
+                                class="inputs"
+                                placeholder="Your Email"
+                                name="email"
+                                required
+                            />
 
+                            <input
+                                type="password"
+                                class="inputs"
+                                placeholder="Enter password"
+                                name="password"
+                                required
+                            />
 
+                            <input type="checkbox" class="check-box" required />
+                            <span>I agree to the terms and conditions</span>
 
+                            <button type="submit" class="submit-btn">
+                                Register
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <script>
+            var log = document.getElementById("login");
+            var regi = document.getElementById("register");
+            var btn = document.getElementById("btn");
 
-    <script>
-        var log=document.getElementById("login");
-        var regi=document.getElementById("register");
-        var btn=document.getElementById("btn");
-
-        function register(){
-            log.style.left="-400px";
-            regi.style.left="50px";
-            btn.style.left="110px";
-        }
-        function login(){
-            log.style.left="50px";
-            regi.style.left="450px";
-            btn.style.left="0px";
-        }
-
-    </script>
-   
-    
-</body>
+            function register() {
+                log.style.left = "-400px";
+                regi.style.left = "50px";
+                btn.style.left = "110px";
+            }
+            function login() {
+                log.style.left = "50px";
+                regi.style.left = "450px";
+                btn.style.left = "0px";
+            }
+        </script>
+    </body>
 </html>
