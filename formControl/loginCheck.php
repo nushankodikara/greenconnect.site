@@ -1,9 +1,9 @@
 <?php
 
 $server = "localhost";
-$username = "";
+$username = "root";
 $password = "";
-$dbname = "";
+$dbname = "greenconnect";
 
 $email = $_POST['email'];
 $userpassword = $_POST['password'];
@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     echo "Connected successfully";
 }
 
-$sql = "SELECT * FROM users WHERE email = '$email' AND password = '$userpassword'";
+$sql = "SELECT * FROM users WHERE email = '$email' AND passwd = '$userpassword'";
 
 $result = $conn->query($sql);
 

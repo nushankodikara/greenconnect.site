@@ -1,8 +1,8 @@
 <?php
 
 $server = "localhost";
-$username = "user";
-$password = "password";
+$username = "root";
+$password = "";
 $dbname = "greenconnect";
 
 $firstname = $_POST['firstname'];

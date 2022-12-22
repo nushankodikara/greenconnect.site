@@ -1,9 +1,9 @@
 <?php
 
 $server = "localhost";
-$username = "";
+$username = "root";
 $password = "";
-$dbname = "";
+$dbname = "greenconnect";
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -22,7 +22,7 @@ if ($conn->connect_error) {
     echo "Connected successfully";
 }
 
-$sql = "INSERT INTO contact (name, email, phone, message) VALUES ('$name', '$email', '$phone', '$message')";
+$sql = "INSERT INTO messages (Name, Email, Phone, Msg) VALUES ('$name', '$email', '$phone', '$message')";
 
 if ($conn-> query($sql) === TRUE) {
     echo "New record created successfully";
@@ -32,6 +32,6 @@ if ($conn-> query($sql) === TRUE) {
 
 $conn->close();
 
-header("Location: Contact%20us/contact.html");
+header("Location: ../index.html");
 
 ?>
