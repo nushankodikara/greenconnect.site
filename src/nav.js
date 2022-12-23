@@ -1,6 +1,6 @@
 const nav_html = `
 <ul>
-<li><a href="/"><i class="fa fa-home"></i>Home Page</a></li>
+<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
 <li><a href="#"><i class="fa fa-university"></i>Sectors</a>
     <div class="sub-menu-1">
         <ul>
