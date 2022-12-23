@@ -25,8 +25,16 @@
     </head>
     <body>
         <!-- Navbar -->
-        <div class="navbar bg-primary text-primary-content">
-            <a class="btn btn-ghost normal-case text-xl">Admin Panel</a>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Admin Panel</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.php">Tickets</a></li>
+                    <li><a href="completed.php">Completed Tickets</a></li>
+                </ul>
+            </div>
         </div>
         <!-- Hero Section -->
         <div class="hero min-h-screen bg-base-200">
@@ -34,7 +42,7 @@
                 <div class="max-w-md">
                     <h1 class="text-5xl font-bold">Hello there</h1>
                     <p class="py-6">
-                        Use the cards below to reply to the users' queries.
+                        Use the cards below to send emails to completed tickets.
                     </p>
                     <a class="btn btn-primary" href="#stats">Get Started</a>
                 </div>
@@ -45,10 +53,7 @@
             <div class="stats shadow">
             <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$dbname = "greenconnect";
+include '../servers.php';
 
 // get all messages from messages table and display with cards
 
@@ -144,46 +149,27 @@ if ($result->num_rows > 0) {
 
             <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$dbname = "greenconnect";
-
-// get all messages from messages table and display with cards
+include '../servers.php';
 
 $conn = new mysqli($server, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-    // echo "Connected successfully";
 }
 
-$sql = "SELECT * FROM messages WHERE completed = 0";
+$sql = "SELECT * FROM messages WHERE completed = 1";
 
 $result = $conn->query($sql);
-
-/*<div class="card w-96 bg-neutral text-neutral-content">
-<div class="card-body items-center text-center">
-    <h2 class="card-title">Ticket #0</h2>
-    <p>I Made this ticket for this reason. Please contact me below.</p>
-    <div class="card-actions justify-end">
-        <a class="btn btn-primary" href="#">Mark As Complete</a>
-        <a class="btn btn-ghost" href="mailto:someone@example.com">Send Email</a>
-    </div>
-</div>
-</div>*/
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<div class='card w-96 bg-neutral text-neutral-content'>
         <div class='card-body items-center text-center'>
-            <h2 class='card-title text-primary'>Ticket #" . $row['ID'] . "</h2>
+            <h2 class='card-title text-primary'>Ticket #" . $row['ID'] . " - " . $row['Name'] . "</h2>
             <p>" . $row['Msg'] . "</p>
             <div class='card-actions justify-end'>
-                <a class='btn btn-primary' href='/admin/markAsComplete.php?id=" . $row['ID'] . "'>Complete</a>
-                <a class='btn btn-secondary' href='/admin/deleteTicket.php?id=" . $row['ID'] . "'>Delete</a>
-                <a class='btn btn-ghost' href='mailto:" . $row['Email'] . "'>Send Email</a>
+                <a class='btn btn-primary' href='mailto:" . $row['Email'] . "'>Send Email</a>
             </div>
         </div>
         </div>";
