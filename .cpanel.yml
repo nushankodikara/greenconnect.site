@@ -1,0 +1,5 @@
+---
+deployment:
+    tasks:
+        - export DEPLOYPATH=/home/greencon/public_html/
+        - /bin/cp /home/greencon/repositories/greenconnect.site/src/* $DEPLOYPATH -R
