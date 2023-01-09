@@ -68,44 +68,6 @@
             </div>
         </section>
 
-        <!--sectors-->
-        <section class="hmphsectors">
-            <div class="banner" data-aos="fade-up">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="sctrsh1" data-text="Sectors">ZONES</h1>
-                        <p class="sctrpara">
-                            An investment in knowledge pays the best interst.-
-                            Benjiamin Franklin
-                        </p>
-                    </div>
-                    <div class="col">
-                        <a href="/Zones/czone.html"
-                            ><div class="card card1">
-                                <h4>Computing</h4>
-                            </div></a
-                        >
-
-                        <a href="/Zones/ezone.html"
-                            ><div class="card card2">
-                                <h4>Engineering</h4>
-                            </div></a
-                        >
-
-                        <a href="/Zones/szone.html"
-                            ><div class="card card3">
-                                <h4>Medicine</h4>
-                            </div></a
-                        >
-                        <a href="/Zones/bzone.html"
-                            ><div class="card card4">
-                                <h4>Busiiness</h4>
-                            </div></a
-                        >
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!--section 04-->
 
