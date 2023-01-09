@@ -28,9 +28,9 @@
                     Welcome to the offical Site of Green Connect.
                 </p>
             </div>
-            <!--<video autoplay loop muted plays-inline class="back-video">
+            <video autoplay loop muted plays-inline class="back-video">
                 <source src="grass.mp4" type="video/mp4">
-                </video>-->
+                </video>
         </section>
 
         <section class="wwwsection">
