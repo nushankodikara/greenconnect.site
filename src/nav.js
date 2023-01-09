@@ -1,7 +1,7 @@
 const nav_html = `
 <ul>
 <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-<li><a href="#"><i class="fa fa-university"></i>Sectors</a></li>
+<li><a href="/zones(new)/zone.html"><i class="fa fa-university"></i>Sectors</a></li>
 <li><a href="/NSBM/com.html"><i class="fa fa-building"></i>Institution</a></li>
 <li><a href="/aboutusmobile/aboutus.html"><i class="fa fa-user"></i>About Us</a></li>
 <li><a href="/login/login.html"><i class="fa fa-sign-in"></i>Login</a></li>
