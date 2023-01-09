@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<title>Contact Us - Green Connect</title>
+	</head>
+	<body class="container">
+		<nav id="topNav"></nav>
+		<main class="container">
+			<h2>Get in Touch</h2>
+			<form
+				action="./formControl/submitForm.php"
+				method="post">
+				<input
+					type="text"
+					name="name"
+					placeholder="Enter Your Name"
+					required />
+				<input
+					type="email"
+					name="email"
+					placeholder="Email"
+					required />
+				<input
+					type="text"
+					name="phone"
+					placeholder="Phone Number" />
+				<input
+					type="text"
+					name="message"
+					placeholder="Message" />
+				<input
+					type="submit"
+					value="Send" />
+			</form>
+		</main>
+		<script src="./js/navigation.js"></script>
+		<script src="./js/userCheck.js"></script>
+	</body>
+</html>

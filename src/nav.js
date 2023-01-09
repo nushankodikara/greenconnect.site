@@ -13,3 +13,8 @@ const nav_html = `
 // inject to DOM class menu-bar
 
 document.querySelector(".menu-bar").innerHTML = nav_html;
+
+console.log("Screen width: " + screen.width);
+if (screen.width <= 699 && !sessionStorage.getItem("redirecting")) {
+	window.location.replace("./mobile/index.php"); //path to your mobile site
+}

@@ -187,6 +187,6 @@
             });
         </script>
 
-        <script src="./userCheck.js"></script>
+        <!-- <script src="./userCheck.js"></script> -->
     </body>
 </html>
