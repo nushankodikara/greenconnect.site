@@ -14,9 +14,10 @@
 			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="customization.css">
 		<title>Green Connect</title>
 	</head>
-	<body class="container">
+	<body id="home" class="container" data-theme="dark">
 		<nav id="topNav"></nav>
 		<article>
 			<header>What is GreenConnect?</header>

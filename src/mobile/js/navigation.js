@@ -5,7 +5,7 @@ const navHTML = `
 				</summary>
 				<ul role="listbox">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="#">Sectors</a></li>
+					<li><a href="sectors.html">Sectors</a></li>
 					<li><a href="institution.html">Institution</a></li>
 					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="login.html">Login</a></li>

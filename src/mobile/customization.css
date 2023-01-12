@@ -1,0 +1,78 @@
+/* Light-green Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+    --primary: #7cb342;
+    --primary-hover: #689f38;
+    --primary-focus: rgba(124, 179, 66, 0.125);
+    --primary-inverse: #FFF;
+}
+
+/* Light-green Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --primary: #7cb342;
+        --primary-hover: #8bc34a;
+        --primary-focus: rgba(124, 179, 66, 0.25);
+        --primary-inverse: #FFF;
+    }
+}
+
+/* Light-green Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+    --primary: #7cb342;
+    --primary-hover: #8bc34a;
+    --primary-focus: rgba(124, 179, 66, 0.25);
+    --primary-inverse: #FFF;
+}
+
+/* Light-green (Common styles) */
+:root {
+    --form-element-active-border-color: var(--primary);
+    --form-element-focus-color: var(--primary-focus);
+    --switch-color: var(--primary-inverse);
+    --switch-checked-background-color: var(--primary);
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+}
+
+body#home{
+    background-image: url("./backgrounds/home.jpeg");
+}
+
+body#about{
+    background-image: url("./backgrounds/aboutus.jpeg");
+}
+
+body#ads {
+    background-image: url("./backgrounds/ads.jpg");
+}
+
+body#contact {
+    background-image: url("./backgrounds/contactus.jpeg");
+}
+
+body#institution {
+    background-image: url("./backgrounds/institution.jpg");
+}
+
+body#login {
+    background-image: url("./backgrounds/login.jpeg");
+}
+
+body#register {
+    background-image: url("./backgrounds/login.jpeg");
+}
+
+body#sectors {
+    background-image: url("./backgrounds/sectors.jpg");
+}
